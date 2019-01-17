@@ -22,50 +22,36 @@ body {
   margin: 0;
 }
 
-.content {
-  padding: 0;
-  margin: 0;
-}
-
-section div {
-  display: inline-block;
-  margin: 0;
-  padding: 1rem;
-  text-align: left;
-  max-width: 100%;
-  background-color: #e2e2e2;
-}
-
-.btn {
-  text-align: center;
-  padding: .4em .75em .3em;
-  border: none;
-  border-radius: 4px;
-  display: inline-block;
-  font-weight: bold;
-  text-decoration: none;
-  font-size: 1.125rem;
-  background-color: #555;
-  color: #fff;
-}
-
-.btn:hover {
-  border: none;
-  background-color: #000;
-}
-
 .img-flex {
   display: block;
   width: 100%;
 }
 
-.placeholder-image {
-  padding-bottom: 1em;
+section {
+  padding: 1rem 0;
+  background-color: #e2e2e2;
+}
+
+h1,
+p {
+  margin: 0 0 1.3rem;
 }
 
 a {
-  background-color: #555;
+  padding: .5em .75em;
   border-radius: 4px;
+  display: inline-block;
+  text-decoration: none;
+  background-color: #555;
+  color: #fff;
+}
+
+a:hover {
+  background-color: #000;
+}
+
+.content {
+  padding: 0 1rem 1rem;
 }
 
 @media only screen and (min-width: 38em) {
@@ -75,19 +61,30 @@ a {
     line-height: 1.4;
   }
 
-  div {
-    display: inline-block;
-    width: 48.5%;
-    vertical-align: middle;
+  section {
+    padding: 2rem 0;
+    text-align: center;
   }
 
   .content {
+    display: inline-block;
+    padding-bottom: 0;
+    max-width: 25em;
+    width: 48%;
     text-align: left;
-    padding-left: .2em;
+    vertical-align: middle;
   }
 
   .placeholder-image {
-    width: 50.5%;
+    display: inline-block;
+    max-width: 25em;
+    width: 50%;
+    vertical-align: middle;
+  }
+
+  h1,
+  p {
+    margin-bottom: 1.4rem;
   }
 
 }
@@ -97,6 +94,11 @@ a {
   html {
     font-size: 120%;
     line-height: 1.5;
+  }
+
+  h1,
+  p {
+    margin-bottom: 1.5rem;
   }
 
 }
