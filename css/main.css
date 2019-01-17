@@ -50,9 +50,14 @@ section div {
   background-color: #000;
 }
 
-section img {
-  display: inline-block;
-  max-width: 100%;
+.img-flex {
+  display: block;
+  width: 100%;
+}
+
+a {
+  background-color: #555;
+  border-radius: 4px;
 }
 
 @media only screen and (min-width: 38em) {
@@ -74,7 +79,7 @@ section img {
   }
 
   .placeholder-image {
-    width: 50.5%
+    width: 50.5%;
   }
 
 }
